@@ -25,6 +25,9 @@
 *.a
 *.lib
 
+# macOS garbage files
+.DS_Store
+
 # Executables
 *.exe
 *.out
