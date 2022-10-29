@@ -24,10 +24,6 @@ const static std::vector<std::vector<double>> ControlValues = {
     {0.0, 1.0, 0.8, -0.2, 2.5, 3.5, 2.0, 5.2, 4.0, 0.5} // degree 9
 };
 
-// Maximum number of segments of lower and upper slefe components.
-const static auto MaximumNumberOfSegments =
-    UniSlefeBuilder::MaximumNumberOfSegments;
-
 // Evaluates all Bernstein basis functions of a given degree at a given point.
 std::vector<double> evaluateBernsteinBasisFunctions(int n, double t) {
   std::vector<double> bfValues(n + 1, 0.0);
