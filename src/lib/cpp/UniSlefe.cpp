@@ -15,7 +15,7 @@ double hatFunction(double t, int numberOfSegments) {
     return 0.0;
   }
 
-  if (t <= 0) {
+  if (t <= 0.0) {
     return numberOfSegments * t + 1.0;
   }
 
@@ -80,8 +80,8 @@ double UniSlefe::upperValueAt(double t) const {
   return interpolate(_upper, _numberOfSegments, t);
 }
 
-std::vector<double> UniSlefe::lowerValues() const { return _lower; }
+const std::vector<double> &UniSlefe::lowerValues() const { return _lower; }
 
-std::vector<double> UniSlefe::upperValues() const { return _upper; }
+const std::vector<double> &UniSlefe::upperValues() const { return _upper; }
 
 } // namespace slefe

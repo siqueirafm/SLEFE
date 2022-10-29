@@ -50,6 +50,6 @@ add_subdirectory(src/lib)
 add_subdirectory(src/app)
 
 # add directory of library unit tests
-# add_subdirectory(src/tst)
+add_subdirectory(src/tst)
 
 

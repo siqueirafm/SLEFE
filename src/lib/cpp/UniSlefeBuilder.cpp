@@ -48,6 +48,8 @@ UniSlefe UniSlefeBuilder::build(int degree, int numberOfSegments,
   const auto &lowerBounds = LowerBounds[degIdx][numberOfSegments - 1];
   const auto &upperBounds = UpperBounds[degIdx][numberOfSegments - 1];
 
+  // Compute a lower and upper value for each breakpoint (there are
+  // numberOfSegments+1).
   for (auto segIdx = 0; segIdx <= numberOfSegments; ++segIdx) {
     const auto tValue = static_cast<double>(segIdx) / numberOfSegments;
 
@@ -84,8 +86,6 @@ double UniSlefeBuilder::aerp(double t, double a, double b) const {
         "The weight must be a number in the real line interval [0,1]");
   }
 
-  const auto value = std::clamp((1.0 - t) * a + t * b, a, b);
-
-  return value;
+  return std::clamp((1.0 - t) * a + t * b, std::min(a, b), std::max(a, b));
 }
 } // namespace slefe
