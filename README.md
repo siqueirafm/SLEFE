@@ -61,7 +61,7 @@ in subdirectory `doc`.
 You should combine the two changes if you wish to build both the unit tests and
 the documentation files:
 
-+ Run `cmake -S . -B build -D BUILD_UNIT_TESTS=ON -D BUILD_DOCS=ON`
++ Run `cmake -S . -B build -D BUILD_UNIT_TESTS=ON -D BUILD_DOC=ON`
 
 ##  References
 
