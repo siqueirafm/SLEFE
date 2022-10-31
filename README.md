@@ -44,7 +44,7 @@ on Windows) in subdirectory `bin` and the library `libslefe.a` (or `slefe.lib` o
 Windows) in subdirectory `lib`. If you want to build the unit tests, then execute
 the steps above with the following change to step 2:
 
-+ Run `cmake -S . -B build -DBUILD_UNIT_TESTS`
++ Run `cmake -S . -B build -D BUILD_UNIT_TESTS=ON`
 
 If all goes well, then you should see the application `slefe-tst` (or `slefe-tst.exe`
 on Windows) in subdirectory `tst`.
@@ -52,7 +52,7 @@ on Windows) in subdirectory `tst`.
 Likewise, if you want to build `doxygen` documentation files, then execute the
 steps above with the following change to step 2:
 
-+ Run `cmake -S . -B build -DBUILD_DOCS`
++ Run `cmake -S . -B build -D BUILD_DOC=ON`
 
 Documentation is generated only if `cmake` can find `doxygen` in your system. If
 this is the case and the build succeeds, then the documentation files are placed
@@ -61,7 +61,7 @@ in subdirectory `doc`.
 You should combine the two changes if you wish to build both the unit tests and
 the documentation files:
 
-+ Run `cmake -S . -B build -DBUILD_UNIT_TESTS -DBUILD_DOCS`
++ Run `cmake -S . -B build -D BUILD_UNIT_TESTS=ON -D BUILD_DOCS=ON`
 
 ##  References
 

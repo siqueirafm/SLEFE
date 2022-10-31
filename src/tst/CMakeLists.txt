@@ -4,7 +4,7 @@ set (SLEFE_INC ${CMAKE_CURRENT_SOURCE_DIR}/../../lib/hpp)
 
 file (GLOB CPP_FILES ${TST_SRC}/*.cpp)
 
-option (BUILD_UNIT_TESTS "Build unit tests" ON)
+option (BUILD_UNIT_TESTS "Build unit tests" OFF)
 message (STATUS "Build unit tests: ${BUILD_UNIT_TESTS}")
 
 if (BUILD_UNIT_TESTS)
