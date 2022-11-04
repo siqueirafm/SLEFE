@@ -7,7 +7,7 @@ file (GLOB CPP_FILES ${TST_SRC}/*.cpp)
 option (BUILD_UNIT_TESTS "Build unit tests" OFF)
 message (STATUS "Build unit tests: ${BUILD_UNIT_TESTS}")
 
-if (BUILD_TESTS)
+if (BUILD_UNIT_TESTS)
   include(FetchContent)
 
   FetchContent_Declare(
