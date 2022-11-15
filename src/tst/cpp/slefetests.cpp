@@ -10,7 +10,7 @@ using UniSlefeBuilder = slefe::UniSlefeBuilder;
 
 namespace {
 // Tolerance adopted by floating-point number comparisons.
-constexpr static auto EqualityTolerance = 1e-8;
+constexpr static auto EqualityTolerance = 1e-12;
 
 // Control values of univariate Bézier functions of degree 2 thru 9.
 const static std::vector<std::vector<double>> ControlValues = {
