@@ -1,22 +1,22 @@
-# SLEFE
+# SLEEFE
 
-A library to build subdividable linear efficient function enclosures.
+A library to build Subdividable Linear Equi-spaced Efficient Function Enclosures.
 
 ## Introduction  
 
-TBD
+see ACM TOMS  Algorithm  tbd
 
 ## Contents
 
 The code is organized as follows:  
 
-* bin            - empty subdirectory where the application `slefe-app` is stored after the build.
+* bin            - empty subdirectory where the application `sleefe-app` is stored after the build.
 * doc            - subdirectory where `doxygen` documentation is stored.
 * include        - empty subdirectory where the header files are stored after the build.
 * lib            - empty subdirectory where the binary library files are stored after the build.
-* plots          - subdirectory where PDF files of plots of basis functions of degree 2 to 9 and their *slefes* are stored.
+* plots          - subdirectory where PDF files of plots of basis functions of degree 2 to 9 and their *sleefes* are stored.
 * src            - subdirectory where the source code of the demo, library, and unit tests are stored.
-* tst            - empty subdirectory where the application `slefe-tst` is stored after the build.
+* tst            - empty subdirectory where the application `sleefe-tst` is stored after the build.
 * LICENSE.md     - license file for the library.  
 * README.md      - this file.  
 * CMakeLists.txt - input to the `cmake` build system.
@@ -37,16 +37,16 @@ To build and install the library, follow the steps below:
 1. Download or clone the code, and then enter the directory `SLEFE`
 2. Run `cmake -S . -B build`
 3. Run `cmake --build build --config Release`
-4. Run `cmake --install build --prefix` [ *full path to your `SLEFE` directory* ]
+4. Run `cmake --install build --prefix` [ *full path to your `SLEEFE` directory* ]
 
-If all goes well, then you should see the application `slefe-app` (or `slefe-app.exe`
-on Windows) in subdirectory `bin` and the library `libslefe.a` (or `slefe.lib` on
+If all goes well, then you should see the application `sleefe-app` (or `sleefe-app.exe`
+on Windows) in subdirectory `bin` and the library `libsleefe.a` (or `sleefe.lib` on
 Windows) in subdirectory `lib`. If you want to build the unit tests, then execute
 the steps above with the following change to step 2:
 
 + Run `cmake -S . -B build -D BUILD_UNIT_TESTS=ON`
 
-If all goes well, then you should see the application `slefe-tst` (or `slefe-tst.exe`
+If all goes well, then you should see the application `sleefe-tst` (or `sleefe-tst.exe`
 on Windows) in subdirectory `tst`.
 
 Likewise, if you want to build `doxygen` documentation files, then execute the
